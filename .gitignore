@@ -1,0 +1,4 @@
+.gitignore
+composer.lock
+public/config.json
+vendor/
