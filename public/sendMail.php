@@ -19,15 +19,15 @@ function sendMail($email, $conent, $emailPassword)
         //Server settings
         $mail->SMTPDebug = SMTP::DEBUG_SERVER; // Enable verbose debug output
         $mail->isSMTP(); // Send using SMTP
-        $mail->Host       = 'smtp.163.com'; // Set the SMTP server to send through
-        $mail->SMTPAuth   = true; // Enable SMTP authentication
-        $mail->Username   = 'lxwtj00@163.com'; // SMTP username
-        $mail->Password   = $emailPassword; // SMTP password
+        $mail->Host = 'smtp.163.com'; // Set the SMTP server to send through
+        $mail->SMTPAuth = true; // Enable SMTP authentication
+        $mail->Username = 'lxwtj00@163.com'; // SMTP username
+        $mail->Password = $emailPassword; // SMTP password
         $mail->SMTPSecure = "ssl"; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
-        $mail->Port       = 465; // TCP port to connect to
+        $mail->Port = 465; // TCP port to connect to
 
         //Recipients
-        $mail->setFrom('lxwtj00@163.com', '苏');
+        $mail->setFrom('lxwtj00@163.com', 'deli_auto');
         $mail->addAddress($email); // Add a recipient
         //$mail->addAddress('ellen@example.com'); // Name is optional
         // $mail->addReplyTo('info@example.com', 'Information');
@@ -41,7 +41,7 @@ function sendMail($email, $conent, $emailPassword)
         // Content
         $mail->isHTML(true); // Set email format to HTML
         $mail->Subject = '打卡成功';
-        $mail->Body    = $conent;
+        $mail->Body = $conent;
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
         $mail->send();

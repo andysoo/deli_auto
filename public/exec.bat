@@ -1,1 +1,0 @@
-c:/php/php7.2/php.exe -f E:/code/deli_auto/public/index.php

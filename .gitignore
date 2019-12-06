@@ -1,4 +1,6 @@
 .gitignore
 composer.lock
 public/config.json
+public/suwei/
+public/huxuejun/
 vendor/

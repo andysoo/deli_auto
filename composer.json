@@ -1,5 +1,7 @@
 {
-    "require": {
-        "phpmailer/phpmailer": "^6.1"
-    }
+  "name": "deli_auto",
+  "description": "deli_auto",
+  "require": {
+    "phpmailer/phpmailer": "^6.1"
+  }
 }
